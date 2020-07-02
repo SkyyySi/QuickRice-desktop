@@ -1,8 +1,7 @@
 [Desktop Entry]
 Type=XSession
 Exec=/usr/bin/quickrice-desktop
-DesktopNames=quickrice;QUICKRICE;QuickRice-Linux;quickrice-desktop;KDE;i3
+DesktopNames=KDE;i3;quickrice
 Name=QuickRice Linux Desktop
 Comment=Desktop environment for QuickRice Linux
 Comment[de]=Desktop umgebung für QuickRice Linux
-X-KDE-PluginInfo-Version=5.19.0
