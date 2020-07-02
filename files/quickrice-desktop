@@ -1,3 +1,3 @@
 #!/bin/sh
-export KDEWM=/usr/bin/i3
+export KDEWM='/usr/bin/i3 -c $HOME/.config/quickrice/i3/config'
 /usr/bin/startplasma-x11
