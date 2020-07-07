@@ -1,3 +1,15 @@
-#!/bin/sh
-export KDEWM='/usr/bin/i3 -c $HOME/.config/quickrice/i3/config'
+#!/bin/bash
+
+QUICKRICE_SYSTEM_CONFIG="/etc/quickrice/i3/config"
+QUICKRICE_USER_CONFIG="$HOME/.config/quickrice/i3/config"
+
+if [ -f "$QUICKRICE_USER_CONFIG" ];
+  then
+    QUICKRICE_CONFIG=$QUICKRICE_USER_CONFIG
+  else
+    QUICKRICE_CONFIG=$QUICKRICE_SYSTEM_CONFIG
+fi
+
+i3 -c $QUICKRICE_CONFIG&
+export KDEWM="/usr/bin/nologin"
 /usr/bin/startplasma-x11
